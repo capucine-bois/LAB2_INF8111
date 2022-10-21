@@ -181,7 +181,7 @@ def reduce_product_by_key(value1, value2):
 spark = SparkSession.builder.getOrCreate()
         
 # Read a toy dataset
-toy = spark.read.csv('toy.csv', header=True)
+toy = spark.read.csv('./data/toy.csv', header=True)
 print("Toy dataset")
 toy.show()
 
